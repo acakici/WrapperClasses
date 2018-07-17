@@ -1,6 +1,9 @@
 package p;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Paper {
 
@@ -11,6 +14,13 @@ public class Paper {
 		int a=bigDiff(list);
 		
 		System.out.println(a);
+		
+		List<> ls= new ArrayList<>();
+		
+		ls.add(list);
+		
+		
+		
 	}
 	public static int bigDiff(int[] nums) {
 		
@@ -41,4 +51,19 @@ public class Paper {
 	return max-min;
 		}
 
+	public static int getDiff(int[] a) {
+		
+		List<Integer> ls= new ArrayList<>();
+		
+		for(int each: a) {
+		
+		ls.add(each);
+			
+		}
+		
+		Collections.sort(ls);
+		return ls.get(ls.size()-1)-ls.get(0);
+	}
+	
+	
 }
